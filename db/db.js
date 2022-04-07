@@ -144,10 +144,10 @@ export default {
         "Desarrollo, implementación y mantenimiento de aplicaciones web. Programación Java, JavaScript, PHP. Diseño de interfaces web. Instalación de Sistemas en Red. Bases de datos, Lenguajes de Marcas.",
       ],
       tags: [
-        "Windows, Ubuntu",
-        "HTML, CSS, LESS, SASS, Bootstrap",
-        "Java, JavaScript",
-        "SQL, PHP, Symfony",
+        "Windows", "Ubuntu",
+        "HTML", "CSS", "LESS", "SASS", "Bootstrap",
+        "Java", "JavaScript",
+        "SQL", "PHP", "Symfony",
       ],
     },
     {
@@ -174,11 +174,11 @@ export default {
         "Instalación y configuración de sistemas microinformáticos y redes. Montaje, mantenimiento y seguridad. Instalación y confguración de programas, servicios de ofimática y aplicaciones web.",
       ],
       tags: [
-        "Windows, Linux",
+        "Windows", "Linux",
         "Redes",
         "Ofimática",
         "Montaje",
-        "HTML, CSS, XML, Notepad++, Joomla",
+        "HTML", "CSS", "XML", "Notepad++", "Joomla",
       ],
     },
   ],
