@@ -313,6 +313,18 @@ Accordion.prototype.dropdown = function (e) {
 
 var accordion = new Accordion($("#accordion"), false);
 
+function enableLightMode() {
+  document.body.classList.toggle("light-mode");
+}
+
+const isLightMode = () =>
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: light)").matches;
+
+if (isLightMode()) {
+    enableLightMode();
+  }
+
 function enableDarkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
