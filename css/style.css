@@ -1831,11 +1831,11 @@ body.offcanvas .colorlib-nav-toggle {
 }
 .colorlib-nav-toggle.active i::before,
 .colorlib-nav-toggle.active i::after {
-  background: #000;
+  background: rgb(0, 150, 136);
 }
 .colorlib-nav-toggle.dark.active i::before,
 .colorlib-nav-toggle.dark.active i::after {
-  background: #000;
+  background: rgb(0, 150, 136);
 }
 .colorlib-nav-toggle:hover,
 .colorlib-nav-toggle:focus,
@@ -1851,7 +1851,7 @@ body.offcanvas .colorlib-nav-toggle {
   *display: inline;
   width: 30px;
   height: 2px;
-  background-color: #000;
+  background-color: rgb(0, 150, 136);
   font: bold 14px/0.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
@@ -1864,7 +1864,7 @@ body.offcanvas .colorlib-nav-toggle {
   content: "";
   width: 30px;
   height: 2px;
-  background-color: #000;
+  background-color: rgb(0, 150, 136);
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
