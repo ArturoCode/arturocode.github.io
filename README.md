@@ -1,6 +1,6 @@
-#Este es mi portfolio como desarrollador web y técnico de sistemas y redes
+# Este es mi portfolio como desarrollador web y técnico de sistemas y redes
 
-Es una sola página en la que estarán estas secciones:
+### Es una sola página en la que estarán estas secciones:
 
 - Breve información sobre mí
 - Habilidades
@@ -9,4 +9,4 @@ Es una sola página en la que estarán estas secciones:
 - Educación y cursos
 - Contacto
 
-Incluye Modo Claro/Oscuro, Navegación por secciones, Ir hacia el comienzo de la página y distintas animaciones
+##### Incluye Modo Claro/Oscuro, Navegación por secciones, Ir hacia el comienzo de la página y distintas animaciones
