@@ -81,9 +81,9 @@ export default {
       },
       {
         projectName: "Arturo Urbanos - Carrd",
-        image: "images/carrd.PNG",
+        image: "images/carrd.jpg",
         summary:
-          "One-Page sencilla adaptada a todo tipo de dispositivos con la información a un solo click. Puedes ver más diseños que he realizado <a href="https://arturocode.github.io/#">aquí"</a>,
+          "One-Page sencilla adaptada a todo tipo de dispositivos con la información a un solo click. Puedes ver más diseños que he realizado <a href='https://arturocode.github.io/#'>aquí</a>",
         preview: "https://arturocode.carrd.co/",
         techStack: ["Carrd"],
       },
