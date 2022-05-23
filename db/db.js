@@ -80,12 +80,12 @@ export default {
         techStack: ["Wordpress"],
       },
       {
-        projectName: "Arturo Urbanos - Carrd",
+        projectName: "Arturo Urbanos - Linktree",
         image: "images/carrd.jpg",
         summary:
-          "He hecho varias One-Pages sencillas adaptadas a todo tipo de dispositivos con la información a un solo click.",
-        preview: "https://arturocode.github.io/#",
-        techStack: ["Carrd"],
+          "He hecho varias One-Pages sencillas adaptadas a todo tipo de dispositivos con la información a un solo click. Esta es una sencilla.",
+        preview: "https://arturocode.github.io/links/",
+        techStack: ["HTML", "CSS", "Alternative:", "Linktree", "Carrd"],
       },
     ],
     freelance: [
