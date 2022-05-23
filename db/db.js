@@ -61,6 +61,14 @@ export default {
         preview: "https://github.com/ArturoCode/arturocode.github.io",
         techStack: ["HTML", "Bootstrap", "CSS", "JavaScript", "PHP"],
       },
+      {
+        projectName: "ArturoCode - Linktree",
+        image: "images/carrd.jpg",
+        summary:
+          "Una One-Page sencilla adaptada a mis redes y proyectos como desarrollador web. Alternativa a los sitios de empresas como Linktree o Carrd.",
+        preview: "https://arturocode.github.io/links/",
+        techStack: ["HTML", "CSS", "Alternative:", "Linktree", "Carrd"],
+      },
     ],
     literature: [
       {
@@ -80,12 +88,12 @@ export default {
         techStack: ["Wordpress"],
       },
       {
-        projectName: "Arturo Urbanos - Linktree",
-        image: "images/carrd.jpg",
+        projectName: "Arturo Urbanos - Carrd",
+        image: "images/carrd2.jpg",
         summary:
-          "He hecho varias One-Pages sencillas adaptadas a todo tipo de dispositivos con la información a un solo click. Esta es una sencilla.",
-        preview: "https://arturocode.github.io/links/",
-        techStack: ["HTML", "CSS", "Alternative:", "Linktree", "Carrd"],
+          "He hecho varias One-Pages sencillas y responsive con la información a un solo click. Esta es la que uso para mi trabajo literario.",
+        preview: "https://arturourbanos.carrd.co/",
+        techStack: ["Carrd"],
       },
     ],
     freelance: [
