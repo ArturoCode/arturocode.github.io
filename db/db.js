@@ -69,6 +69,14 @@ export default {
         preview: "https://arturocode.github.io/links/",
         techStack: ["HTML", "CSS", "Bootstrap", "Alternative:", "Linktree", "Carrd"],
       },
+      {
+        projectName: "ArturoCode - Galería de Cursos",
+        image: "images/galeria-cursos.jpg",
+        summary:
+          "Una portfolio al estilo de una galería de imágenes resonsive para acceder a los cursos que he realizado y sus diplomas.",
+        preview: "https://arturocode.github.io/cursos/",
+        techStack: ["HTML", "CSS", "Portfolio", "Gallery-Images"],
+      },
     ],
     literature: [
       {
@@ -161,10 +169,11 @@ export default {
     {
       title: "Formación complementaria",
       duration: "2020 - actualidad",
-      subtitle: "Open Webinars, Crehana, Platzi",
+      subtitle: "OpenWebinars, Platzi, Crehana...",
       details: [
-        "Formación complementaria en plataformas de educación del ámbito tecnológico. He realizado cursos y proyectos de NPM, Asincronismo JS, Responsive Deign, Git, Markdown, Python y más.",
+        "Formación complementaria en varias plataformas de educación del ámbito tecnológico",
       ],
+      preview: "https://arturocode.github.io/cursos",
       tags: [
         "Python",
         "GIT",
