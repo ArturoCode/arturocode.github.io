@@ -62,7 +62,7 @@ export default {
         techStack: ["HTML", "Bootstrap", "CSS", "JavaScript", "PHP"],
       },
       {
-        projectName: "ArturoCode - Linktree",
+        projectName: "Linktree (Arturo's Version)",
         image: "images/linktree.jpg",
         summary:
           "Una One-Page sencilla y adaptada a mis redes y proyectos como desarrollador web. Alternativa a los sitios de empresas como Linktree o Carrd.",
@@ -70,7 +70,7 @@ export default {
         techStack: ["HTML", "CSS", "Bootstrap", "Alternative:", "Linktree", "Carrd"],
       },
       {
-        projectName: "ArturoCode - Galería de Cursos",
+        projectName: "Galería de Cursos",
         image: "images/galeria-cursos.jpg",
         summary:
           "Una portfolio al estilo de una galería de imágenes resonsive para acceder a los cursos que he realizado y sus diplomas.",
@@ -171,9 +171,8 @@ export default {
       duration: "2020 - actualidad",
       subtitle: "OpenWebinars, Platzi, Crehana...",
       details: [
-        "Formación complementaria en varias plataformas de educación del ámbito tecnológico",
+        "Formación complementaria en varias plataformas de educación del ámbito tecnológico. Puedes consultarla en arturocode.github.io/cursos/",
       ],
-      preview: "https://arturocode.github.io/cursos",
       tags: [
         "Python",
         "GIT",
