@@ -1,0 +1,201 @@
+/* BARRA DE NAVEGACIÓN */
+body {
+  display: block;
+  overflow-x: hidden;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #78c18c;
+}
+
+nav ul li a {
+  color: #a9a9a9;
+  font-size: 22px;
+  margin: auto 10px;
+}
+
+nav ul li a:hover {
+  color: #78c18c;
+}
+
+/* BANNER */
+section {
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+section h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #78c18c;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+button {
+  max-width: 50%;
+  border-radius: 50px !important;
+}
+
+#banner .col {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+#banner .img-col {
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+#banner img {
+  max-width: 130% !important;
+  width: 130%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .col-img {
+      display: block;
+      }
+      .col-banner {
+        width: 100%;
+      }
+    }
+    
+    @media (max-width: 1000px) {
+    .col-img {
+      display: none;
+      }
+      }
+
+/* TARJETAS */
+.card {
+  box-shadow: 11px 7px 16px #f9f9f9;
+  border: 0;
+  text-align: center;
+  transition: all 300ms;
+}
+
+.card::after {
+  content: "";
+  background-color: rgba(179, 229, 252, .1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.card:hover:after{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+#banner .cards .card {
+  width: 18rem;
+}
+
+/* ICONOS */
+#banner .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* PROYECTOS */
+#projects .projects {
+  margin-bottom: 50px;
+}
+
+/* FOOTER */
+
+#footer {
+  text-align: center;
+  background-color: #32aaaa;
+  color: white;
+}
+#footer h1 {
+  text-align: center;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* SISTEMA DE DOS COLUMNAS */
+
+/* IZDA */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* DCHA */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+/* TARJETA (BLOG) */
+.card-blog {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media query para hacer que las columnas estén una debajo de la otra cuando la pantalla es de menos de 800px de ancho */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* MEDIA QUERY para el iframe de Contacto*/
+
+@media screen and (max-width: 800px){
+  iframe {
+    width: 380px;
+  }
+}
