@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head prefix="og: https://ogp.me/ns#">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Backups automáticos de Notion | ArturoCode</title>
+        <meta property="og:title" content="Backups automáticos de Notion | ArturoCode" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Hacer backups automáticos de tu contenido en Notion es posible. Te explico cómo."
+        />
+        <meta
+          property="og:description"
+          content="Hacer backups automáticos de tu contenido en Notion es posible. Te explico cómo."
+        />
+    
+        <meta property="og:url" content="https://arturocode.github.io/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="../images/logo.png/" />
+        <meta
+          name="keywords"
+          content="portfolio, website, personal website, github, project"
+        />
+        <meta name="author" content="ArturoCode" />
+    
+        <meta name="twitter:site" content="@ArturoCode" />
+        <!--<meta name="twitter:card" content="summary || summary_large_image || player || app" />-->
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:image"
+          content="https://arturocode.github.io/images/arturocode_logo_full.png"
+        />
+    
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon" />
+    
+        <!-- ESTILOS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="../css/styles.css"/>
+
+        <link rel="stylesheet" href="../css/blog.css"/>
+
+        <!-- IMPORTAR SVG -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+
+</head>
+<body>
+    
+     <!-- BARRA DE NAVEGACIÓN -->
+     <header class="header">
+        <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-light bg-white">
+           <div class="container">
+             <a class="navbar-brand" href="../index.html"><img src="../images/arturocode_logoweb.png"></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto">
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="../index.html">Inicio</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="../blog.html">Blog</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="../about-me.html">Sobre mí</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="../contact.html">Contacto</a>
+                 </li>
+               </ul>            
+             </div>
+           </div>
+         </nav>
+       </header>
+         <!-- BARRA DE NAVEGACIÓN -->
+
+         <!-- POST DEL BLOG -->
+
+    <div class="contenido">
+        <div class="row g-5" style="margin-top:80px;">
+        <div class="col-md-8">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">
+            Notion
+          </h3>
+    
+          <article class="blog-post">
+            <h2 class="blog-post-title mb-1">Backups automáticos de Notion</h2>
+            <p class="blog-post-meta">9/7/2021 por <a href="#" style="color: #32aaaa; font-weight: bold;">ArturoCode</a></p>
+            
+            <p><a href="https://github.com/ArturoCode/notion-backups" style="color: red; font-weight: bold;">Puedes encontrar esta misma información en mi repositorio de GitHub</a></p>
+            <hr>
+            <p>Notion es mi herramienta perfecta para mantenerme organizado, pero una de las pegas que le he encontrado a este sistema es que la incapacidad de poder recuperar los datos con alguna copia de seguridad. Tus datos con Notion se supone que está en la nube y es verdad que puedes exportar tu contenido en Markdown, ¿pero y si de repente sus sistemas fallan?</p>
+
+            <p>¿Y si al volver te encuentras sin tus datos?</p>
+
+            <p>(que no podrías exportar porque ya no están)</p>
+
+            <p>Pues la solución es programar una copia de seguridad automática.</p>
+
+            <p>Quizá haya otros métodos mejores (sobre todo si tienes muchos archivos grandes alojados en Notion), pero creo que mi uso puede ser el de muchos, así que aquí os cuento como la he programado yo de forma semanal. Para ello necesitareis una cuenta de Notion y de GitLab.</p>
+
+            <p>Thanks for the help, <a href="https://artur-en.medium.com/automated-notion-backups-f6af4edc298d" style="color: #32aaaa; font-weight: bold;">Artur Burtsev</a>.</p>
+
+            <h2>1. Consigue el token de Notion y su spaceID</h2>
+
+            <p>Puede que haya otras maneras de hacerlo, pero cuando empecé a investigar sobre las maneras de acceder al funcionamiento de Notion para imitarlo y poder hacer backups por mi cuenta, solo encontré esto.</p>
+
+            <p>1. En tu navegador (yo usé Google Chrome), primero tienes que abrir la pagina web de Notion (e iniciar sesión con tu cuenta si no lo estás ya)</p>
+
+            <p>2. Una vez iniciada sesión, arriba a la izquierda en la barra lateral, accede a la sección de "Settings & Members"</p>
+
+            <p>3. Una vez allí, haz click la sección de Settings (justo debajo del titular de WORKSPACE)</p>
+
+            <p>4. Abre las Chrome DevTools y ve a la pestaña Network</p>
+
+            <p>5. En esa pestaña activa el filtro XHR</p>
+
+            <p>6. Limpia la consola</p>
+
+            <p>7. Con las DevTools abiertas, pulsa en la opción de Notion de "Exportar todo el contenido"</p>
+
+            <p>8. La pestaña de Network se habrá actualizado y a la izquierda verás diferentes procesos. Pulsa en "enqueueTask"</p>
+
+            <p>9. Una vez abierta en la pestaña Headers tan solo tienes que buscar en cookie el valor de token_v2, guárdalo bien en un archivo.</p>
+
+            <p>10. Desplázate hacia el fondo y debajo de la sección Request Payload" enncontrarás el spaceId, guarda esto bien en otro archivo.</p>
+
+            <h2>2. Crear un token para poder realizar las copias en GitLab</h2>
+            
+            <p>1. En GitLab accede a los User Settings y a la sección de Access Tokens.</p>
+
+            <p>Puedes llamarlo como quieras, pero asegúrate de que tengas rellenado lo demás como en esta captura de pantalla.</p>
+
+            <img src="../images/gitlab_token.png" style="width:70%; height:70%;">
+
+            <p>2. Una vez lo hayas creado, verás que tienen un Personal Access Token. Guárdalo bien porque solo lo verás esa vez.</p>
+
+            <h2>3. Crear el repositorio en GitLab para guardar el backup automatizado</h2>
+
+            <p>1. Crea un nuevo proyecto.</p>
+
+            <p>Puede ser público o privado, pero en Notion puedes haber guardado de todo y preferir que solo tú mismo puedas acceder a los archivos Markdown de Notion de la copia de seguridad.</p>
+
+            <p>2. Una vez creado, pulsa el botón "Set up CI/CD".</p>
+
+            <p>3. Te encontrarás con una ventana para escribir un script. Puedes copiar el contenido del archivo que tengo alojado en mi repositorio: "gitlab-ci.yml" y pulsar en el botón "Commit changes".</p>
+
+            <p>Este script lo que hará es descargar todo tu contenido de Notion en la carpeta backup, en vez de en un ZIP (que es lo que conseguirías con la opción de Exportar todo mi contenido que he mencionado al principio de esta explicación).</p>
+
+            <h2>4. Programa el backup automático</h2>
+
+            <p>1. Una vez el script esté guardado, en el menú de la izquierda selecciona "Schedules" dentro de "CI/CD".</p>
+
+            <p>2. Una vez dentro de Schedules, pulsa el botón de "Schedule" y apareceras en el formulario de "Schedule a new pipeline"</p>
+
+            <p>3. Aquí te dejo mi patrón, pero puede no ser el que quieras. </p>
+
+            <p>Si no manejas la sintaxis de Cron puedes configurarlo cada día, cada semana o cada mes desde el propio formulario con pulsar su opción. </p>
+
+            <p>4. También selecciona tu zona horaria.</p>
+
+            <p>Puedes tener una distinta a la mía (Madrid) y eso afectará a la hora a la que realizará el proceso.</p>
+
+            <img src="../images/notion_schedule.png" style="width:70%; height:70%;">
+
+            <p>5. En las variables tienes que introducir estos valores:</p>
+
+            <p>- CI_PUSH_TOKEN -> el valor del Personal Access Token que habías guardado</p>
+
+            <p>- EXPORT_FILENAME -> /tmp/export.zip</p>
+
+            <p>- NOTION_SPACE_ID -> el valor de spaceId que habías guardado</p>
+
+            <p>- NOTION_TOKEN_V2 -> el valor de token_v2 que habías guardado</p>
+
+            <p>- PYTHONUNBUFFERED -> 1</p>
+
+            <p>- TZ -> el valor de tu zona horaria, puedes consultarlo <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">aquí</a>.</p>
+
+            <p>6. Con esto intrdoucido, ya puedes pulsar el botón "Save pipeline schedule".</p>
+
+            <h2>5. Prueba el backup que has automatizado</h2>
+
+            <p>En Schedules ahora aparecerá el que has creado. Puedes pulsar el botón "Play" para asegurarte de que funcionará correctamente después de realizar este intento manual. Después de unos minutos el círculo de log aparecerá en verde si se ha realizado el proceso con exito.</p>
+
+            <p>Si no, revisa de nuevo esta explicación y asegúrate de que las has seguido al pie de la letra.</p>
+
+            <p>Una vez hecho el proceso puedes volver a la página del proyecto que has creado y verás que se ha creado una carpeta llamada backup. Ahí dentro podrás encontrar tu workspace de Notion en diferentes archivos Markdown. Puedes descargarlos si quieres tener una copia en tu equipo, ten en cuenta que estos se actualizarán cuando se haga el primero backup automático después de tu intento manual.</p>
+
+            <h2>6. Disfruta de Notion y de la libertad de que tienes todo tu contenido</h2>
+
+            <p>Ya no te tienes que preocupar de problemas con Notion y su nube. Puedes importar tu contenido en caso de que lo hubiera gracias a estos backups automatizados. </p>
+
+            <h3 style="margin-top:50px">¡Espero haberte ayudado! Si te ha servido de ayuda, <a href="https://www.buymeacoffee.com/arturocode" style="color: #32aaaa; font-weight: bold;">puedes invitarme a un café</a>. ¡Te lo agradecería mucho!</h3>
+
+            <button type="button" class="btn btn-success btn-lg mt-4"> <a href="http://twitter.com/share?text=Backups automáticos de Notion, leido en: &url=https://arturocode.github.io/blog/notion-backups.html via @ArturoCode" target="blank">Comparte esta entrada en Twitter</a></button>
+        
+        </div>
+      </div>
+    </div>
+
+      <!-- POST DEL BLOG -->
+
+</body>
+</html>
